@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>粒星</title>
+    <title>粒星</title>
 
-  <!-- CSS  -->
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- Angular.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+
+    <!-- head共通部分-->
+    <div ng-include="'include/head.html'"></div>
 </head>
 <body>
-<a href="#!" class="brand-logo"><img src="image/logo.png" style="width:150px; height:75px"></a>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-      <ul class="center hide-on-med-and-down">
-        <li><a href="#">TOP</a></li>
-        <li><a href="#">LIVE</a></li>
-        <li><a href="#">BIOGRAPHY</a></li>
-        <li><a href="#">DISCOGRAPHY</a></li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="#">TOP</a></li>
-        <li><a href="#">LIVE</a></li>
-        <li><a href="#">BIOGRAPHY</a></li>
-        <li><a href="#">DISCOGRAPHY</a></li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
+    <div class="container">
+        <div ng-include="'include/header.html'"></div>
+        <div class="row content">
+
+            <!-- right column -->
+            <div class="col-xs-12 col-md-8">
+                <img src="image/background/illustlate.jpg" style="width:520px; height:800px" />
+            </div>
+
+            <!-- left column -->
+            <div class="col-xs-12 col-md-4">
+                <div ng-include="'include/rightColumn.html'"></div>
+            </div>
+
+        </div>
+        <div ng-include="'include/footer.html'"></div>
     </div>
-  </nav>
+</body>
