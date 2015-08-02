@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>粒星</title>
+
+    <!-- Angular.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+
+    <!-- head共通部分-->
+    <div ng-include="'include/head.html'"></div>
+</head>
+<body>
+    <div class="container">
+        <div ng-include="'include/header.html'"></div>
+        <div class="row content">
+
+            <!-- right column -->
+            <div class="col-xs-12 col-md-8">
+                <img src="image/background/illustlate.jpg" style="width:520px; height:800px" />
+            </div>
+
+            <!-- left column -->
+            <div class="col-xs-12 col-md-4">
+                <div ng-include="'include/rightColumn.html'"></div>
+            </div>
+
+        </div>
+        <div ng-include="'include/footer.html'"></div>
+    </div>
+</body>
