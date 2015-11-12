@@ -2,6 +2,33 @@ $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 
 body {
+    .menu {
+        padding:50px 0 50px 0;
+        text-align:center;
+        height:40px;
+        .menu-item {
+            color:lightgray;
+            font-size:160%;
+            position: relative;
+                height: 50px;
+            &:hover {
+                .menu-circle {
+                    background-color: #ffc065;
+                }
+            }
+            .menu-circle {
+                width: 50px;
+                height: 50px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                margin:auto;
+                position: relative;
+                top: -40px;
+                z-index: -1;
+            }
+        }
+    }
     .main-image {
         background-image: url(https://s3-ap-northeast-1.amazonaws.com/keboko/yo_fe/top_main.png);
         background-size: cover;
