@@ -9,6 +9,18 @@ body {
         height: 300px;
         border-style: none;
     }
+    .top-news {
+        padding: 20px;
+        margin: 10px 0;
+        border: 1px solid #eeeeee;
+        .top-news-title {
+            color: lightblue;
+            font-size: 200%;
+        }
+        .top-news-body{
+            color: gray;
+        }
+     }
     .groNavi {
         div {
             height: 40px;
