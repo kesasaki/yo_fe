@@ -1,3 +1,6 @@
+body .title {
+  color: lightgray;
+  font-size: 200%; }
 body .menu {
   padding: 50px 0 50px 0;
   text-align: center;
@@ -35,9 +38,16 @@ body .top-news {
   body .top-news .top-news-body {
     color: gray;
     white-space: pre-wrap; }
+body .main-content {
+  color: gray; }
+  body .main-content .body-list-title {
+    color: lightgray;
+    font-size: 160%; }
+  body .main-content .story-body {
+    white-space: pre-wrap; }
 body .groNavi div {
   height: 40px; }
 body .groNavi a:hover {
-  color: glay; }
+  color: gray; }
 
 /*# sourceMappingURL=style.css.map */
