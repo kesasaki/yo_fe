@@ -20,7 +20,11 @@ app.controller('smallMenuController', ['$scope', function($scope) {
 }]);
 app.controller('largeCurrentController', ['$scope', '$location', function($scope, $location) {
     m = $location.absUrl().match(/\/(index\.html|profile\.html|live\.html|music\.html|works\.html|contact\.html)$/);
-    $(".gloNavi").children("a[href='" + m[1] + "']").find("img").css("display", "inline");
+    current = "index.html"
+    if (m !== null) {
+        current = m[1]
+    }
+    $(".gloNavi").children("a[href='" + current + "']").find("img").css("display", "inline");
 }]);
 app.controller('smallCurrentController', ['$scope', '$location', function($scope, $location) {
   $scope.obj={current: currentPath($location)}
