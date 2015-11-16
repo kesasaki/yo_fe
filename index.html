@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="yo_fe">
 <meta charset="UTF-8">
 <head>
     <title>粒星 | Top</title>
@@ -8,21 +8,44 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
 
     <!-- head共通部分-->
-    <div ng-include="'include/head.html'"></div>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- materialize CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+    <!-- bootstrap -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- /bootstrap -->
+
+    <!-- css -->
+    <link rel ="stylesheet" href="css/style.css" type="text/css" />
+
+    <script src="js/init.js"></script>
+
 </head>
 <body>
-    <div class="container">
-        <div ng-include="'include/header.html'"></div>
-    </div>
-
-    <!-- main image -->
-    <div class="main-image" ></div>
-
-    <!-- under image -->
+    <div ng-include="'include/header.html'"></div>
     <div class="container">
         <div class="row content">
-
             <!-- left column -->
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/oEGLL0_xxjc" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
             <div class="col-xs-12 col-md-4">
                 <div class="top-news">
                     <div>
@@ -36,6 +59,8 @@
                         <a href='#'>This is a link</a>
                     </div>
                 </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
 
                 <div class="top-news">
                     <div>
@@ -95,6 +120,8 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="col-xs-12 col-md-4">
                 <div class="top-news">
                     <div>
                         <span class="top-news-title">News</span>
@@ -107,6 +134,8 @@
                         <a href='#'>This is a link</a>
                     </div>
                 </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
 
                 <div class="top-news">
                     <div>
