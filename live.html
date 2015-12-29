@@ -1,33 +1,80 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="yo_fe">
 <meta charset="UTF-8">
 <head>
     <title>粒星 | Live</title>
+
     <!-- Angular.js -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
 
     <!-- head共通部分-->
-    <div ng-include="'include/head.html'"></div>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- materialize CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+    <!-- bootstrap -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- /bootstrap -->
+
+    <!-- css -->
+    <link rel ="stylesheet" href="css/style.css" type="text/css" />
+
+    <script src="js/init.js"></script>
+
 </head>
 <body>
+    <div ng-include="'include/header.html'"></div>
     <div class="container">
-        <div ng-include="'include/header.html'"></div>
         <div class="main-content">
-            <div class="title">Live</div>
             <div class="body">
                 <div class="live-list row">
                     <div class="live-row col-md-10 col-md-offset-1">
-                        <div class="live-row-body row">
-                            <div class="col-md-7">
-                                <div class="row">
-                                    <h2>ライブタイトル "Live Title"</h2>
-                                    <hr />
-                                    <p>2015 09 28</p>
-                                    <p>場所</p>
-                                </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                              <div class="live-row-body">
+                                <h2>ライブタイトル "Live Title"</h2>
+                                <hr />
+                                <p>2015 09 28</p>
+                                <p>場所</p>
+                              </div>
                             </div>
-                            <div class="col-md-5">
-                                <img class="live-image" src="https://s3-ap-northeast-1.amazonaws.com/keboko/yo_fe/top_main.png" />
+                            <div class="col-md-6">
+                              <div class="live-row-body">
+                                <h2>ライブタイトル "Live Title"</h2>
+                                <hr />
+                                <p>2015 09 28</p>
+                                <p>場所</p>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="live-row-body">
+                                <h2>ライブタイトル "Live Title"</h2>
+                                <hr />
+                                <p>2015 09 28</p>
+                                <p>場所</p>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="live-row-body">
+                                <h2>ライブタイトル "Live Title"</h2>
+                                <hr />
+                                <p>2015 09 28</p>
+                                <p>場所</p>
+                              </div>
                             </div>
                         </div>
                     </div>
