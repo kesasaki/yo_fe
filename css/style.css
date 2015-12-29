@@ -45,6 +45,23 @@ body .main-content {
     font-size: 160%; }
   body .main-content .story-body {
     white-space: pre-wrap; }
+  body .main-content .live-row {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #eeeeee;
+    border-radius: 5px 5px;
+    -webkit-border-radius: 5px 5px;
+    -moz-border-radius: 5px 5px; }
+    body .main-content .live-row .live-row-body {
+      margin-bottom: 0px; }
+      body .main-content .live-row .live-row-body hr {
+        border: 1px solid #eeeeee;
+        max-width: 400px; }
+    body .main-content .live-row .live-image {
+      width: 100%;
+      border-radius: 5px 5px;
+      -webkit-border-radius: 5px 5px;
+      -moz-border-radius: 5px 5px; }
 body .groNavi div {
   height: 40px; }
 body .groNavi a:hover {

@@ -64,6 +64,27 @@ body {
         .story-body {
             white-space: pre-wrap ;
         }
+        .live-row {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #eeeeee;
+            border-radius: 5px 5px;
+            -webkit-border-radius: 5px 5px;
+            -moz-border-radius: 5px 5px;
+            .live-row-body {
+                margin-bottom: 0px;
+                hr {
+                    border: 1px solid #eeeeee;
+                    max-width: 400px;
+                }
+            }
+            .live-image {
+                width: 100%;
+                border-radius: 5px 5px;
+                -webkit-border-radius: 5px 5px;
+                -moz-border-radius: 5px 5px;
+            }
+        }
     }
     .groNavi {
         div {

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app>
+<meta charset="UTF-8">
+<head>
+    <title>粒星 | Live</title>
+    <!-- Angular.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+
+    <!-- head共通部分-->
+    <div ng-include="'include/head.html'"></div>
+</head>
+<body>
+    <div class="container">
+        <div ng-include="'include/header.html'"></div>
+        <div class="main-content">
+            <div class="title">Live</div>
+            <div class="body">
+                <div class="live-list row">
+                    <div class="live-row col-md-10 col-md-offset-1">
+                        <div class="live-row-body row">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <h2>ライブタイトル "Live Title"</h2>
+                                    <hr />
+                                    <p>2015 09 28</p>
+                                    <p>場所</p>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <img class="live-image" src="https://s3-ap-northeast-1.amazonaws.com/keboko/yo_fe/top_main.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-include="'include/footer.html'"></div>
+    </div>
+</body>
