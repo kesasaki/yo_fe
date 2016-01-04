@@ -1,0 +1,52 @@
+@import "compass";
+@mixin pc($width: 769px) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+@mixin smartphone($width: 768px) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+body {
+  border: 0px;
+  position: relative;
+  .container {
+    overflow: hidden;
+    max-width: 970px;
+    margin: auto;
+    .main-image {
+      background: url(../image/yo_fe_banner_full.png) 0 0 no-repeat;
+      @include background-size(contain);
+      padding-top: 15%;
+      @include smartphone {
+        background: url(../image/yo_fe_banner_small.png) 0 0 no-repeat;
+        @include background-size(contain);
+        padding-top: 33.3%;
+      }
+    }
+  }
+  .background-image {
+    position: absolute;
+    background: url("../image/background.png") 0 0 no-repeat;
+    @include background-size(contain);
+    bottom: 0;
+    right: 0;
+    padding-top: 58%;
+    width: 50%;
+    height: 0px;
+    z-index: -100;
+  }
+}
+
+.button {
+  display: table-cell;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  @include border-radius(10px);
+  @include box-shadow(0px 7px 0px 0px rgba(0,0,0,0.2));
+}
