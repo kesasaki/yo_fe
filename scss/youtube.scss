@@ -1,0 +1,121 @@
+@import "compass";
+@import "compass/common.scss";
+
+input[name=youtube-modal-radio] {
+  display: none;
+}
+
+.youtube-modal-open:checked ~ .youtube-modal-closer {
+  display: block;
+}
+
+.youtube-modal-open:checked ~ .youtube-modal {
+  display: block;
+}
+
+#youtube-modal-voice:checked ~ .youtube-modal .voice {
+  display: block;
+}
+
+.youtube-modal-closer {
+  display: none;
+  position: fixed;
+  width:  100%;
+  height: 100%;
+  top:  0;
+  left: 0;
+  opacity: 0.5;
+  background-color: #000;
+}
+
+.youtube-modal {
+  display: none;
+  position: fixed;
+  width: 550px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  margin-left: -275px;
+  margin-top: -150px;
+  background-color: #fff;
+  @include border-radius;
+  @include smartphone {
+    width: 320px;
+    height: 170px;
+    margin-left: -160px;
+    margin-top: -85px;
+  }
+  .voice {
+    display: none;
+    margin: 25px 0px 0px 25px;
+    @include smartphone {
+      margin: 10px 0px 0px 10px;
+    }
+
+    iframe {
+      width:  500px;
+      height: 250px;
+      @include smartphone {
+        width: 300px;
+        height: 150px;
+      }
+    }
+  }
+}
+
+.main-content {
+  padding-left: 20px;
+  padding-right: 20px;
+  .right-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 66%;
+    @include smartphone {
+      width: 100%;
+    }
+    .music-wrapper {
+      margin-right: 10px;
+      @include smartphone {
+        margin-right: 0px;
+      }
+      .youtube-button-wrapper {
+        display: table;
+        margin-bottom: 15px;
+        border-collapse: separate;
+        border-spacing: 10px;
+        width: 100%;
+
+        .youtube-button {
+          width: 40%;
+          height: 44px;
+          background-color: #ee0000;
+        }
+      }
+      .sound-cloud-wrapper {
+        padding: 10px;
+        background-color: rgba(255,255,255,0.7);
+        @include border-radius(15px);
+        @include box-shadow(3px 3px 0px 0px rgba(0,0,0,0.1));
+      }
+    }
+  }
+
+  .left-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    @include smartphone {
+      width: 100%;
+    }
+    .news-wrapper {
+      margin-left: 10px;
+      padding: 10px;
+      background-color: #fff;
+      @include border-radius(15px);
+      @include box-shadow(3px 3px 0px 0px rgba(0,0,0,0.1));
+      @include smartphone {
+        margin-left: 0px;
+      }
+    }
+  }
+}

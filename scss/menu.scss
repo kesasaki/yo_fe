@@ -1,0 +1,16 @@
+.menu {
+  display: table;
+  text-align:center;
+  width: 100%;
+  a {
+    display: table-cell;
+    width: 25%;
+    height: 40px;
+    vertical-align: middle;
+    img {
+      height: 20px;
+      margin-right: 5px;
+      margin-bottom: -5px;
+    }
+  }
+}

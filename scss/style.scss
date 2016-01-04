@@ -1,50 +1,18 @@
+@import "compass";
+@import "compass/common.scss";
+@import "menu.scss";
+@import "youtube.scss";
+
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 $main-font-color: lightgray;
 $text-font-color: gray;
 
-@mixin pc($width: 769px) {
-  @media screen and (min-width: $width) {
-    @content;
-  }
-}
-@mixin smartphone($width: 768px) {
-  @media screen and (max-width: $width) {
-    @content;
-  }
-}
 
 body {
     .title {
         color: $main-font-color;
         font-size:200%;
-    }
-    .menu {
-        padding:10px 0 10px 0;
-        text-align:center;
-        .menu-item {
-            color:$main-font-color;
-            font-size:150%;
-            height: 50px;
-            img {
-                display: none;
-            }
-        }
-    }
-    .main-image {
-        background-size: cover;
-        width: 100%;
-        border-style: none;
-    }
-    .main-image-small{
-        @include pc {
-            display: none;
-        }
-    }
-    .main-image-full{
-        @include smartphone {
-            display: none;
-        }
     }
     .top-news {
         padding: 20px;
@@ -60,14 +28,6 @@ body {
         }
     }
     .main-content {
-        color: $text-font-color;
-        .body-list-title {
-            color: $main-font-color;
-            font-size:160%;
-        }
-        .story-body {
-            white-space: pre-wrap ;
-        }
         .music-row-body {
             .music-image {
                 max-width: 200px;
