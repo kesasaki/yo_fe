@@ -1,0 +1,27 @@
+.profile-wrapper {
+  padding: 10px;
+  background-color: rgba(255,255,255,0.7);
+  @include border-radius(15px);
+  @include box-shadow(3px 3px 0px 0px rgba(0,0,0,0.1));
+  .profile-img {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    @include smartphone {
+      display: block;
+      width: 100%;
+      max-width: 200px;
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .profile-text {
+    width: 66%;
+    display: inline-block;
+    @include smartphone {
+      display: block;
+      width: 100%;
+    }
+  }
+}
