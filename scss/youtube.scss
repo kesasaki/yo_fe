@@ -84,6 +84,7 @@ input[name=youtube-modal-radio] {
       width: 50%;
       text-align: center;
       position: relative;
+      cursor: pointer;
       img {
         width: 95%;
       }
@@ -161,6 +162,7 @@ input[name=youtube-modal-radio] {
         }
         .news-title {
           border-bottom: 1px solid #eeeeee;
+          cursor: pointer;
         }
         .news-body {
           display: none;
