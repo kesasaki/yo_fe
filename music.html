@@ -12,58 +12,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <!-- materialize CSS  -->
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+        <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-
-    <!-- bootstrap -->
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <!-- /bootstrap -->
-
-    <!-- css -->
-    <link rel ="stylesheet" href="css/style.css" type="text/css" />
-
     <script src="js/init.js"></script>
 
+    <link href="./image/favicon.ico" rel="shortcut icon">
 </head>
 <body>
+  <div class="container">
     <div ng-include="'include/header.html'"></div>
-    <div class="container">
-      <div class="main-content">
-        <div class="body">
-          <div class="music-list row">
-            <div class="music-row col-md-10 col-md-offset-1">
-              <div class="music-row-body row">
-                <div class="music-image col-md-3">
-                  <img class="img-responsive" src="./image/music01.jpg" />
-                </div>
-                <div class="col-md-9">
-                  <div class="music-sale-date">
-                    2015/09/28 ON SALE
-                  </div>
-                  <h2>アルバムタイトル "Steel God Hip"</h2>
-                  <hr />
-                  <div class="music-info">待望の3rd full album「娑婆ラバ」堂々完成！！
+    <div class="main-content">
+      <div class="right-content">
+        <div class="music-wrapper">
+          <div class="sound-cloud-wrapper">
+            <div class="music-image" style="width: 20%; height: 100%; display: inline-block;">
+              <img class="img-responsive" src="./image/music01.jpg" style="width:100px; height:100px;"/>
+            </div>
+            <div class="music-text" style="width: 70%; display: inline-block;">
+              <div class="music-sale-date">
+                2015/09/28 ON SALE
+              </div>
+              <h2 style="margin: 5px 0px 5px 5px; font-size: x-large; color: lightgray;">アルバムタイトル "Steel God Hip"</h2>
+              <hr />
+              <div class="music-info">待望の3rd full album「娑婆ラバ」堂々完成！！
 高橋留美子原作のアニメ「境界のRINNE」では2期連続でオープニン・エンディングを担当、さらに2015年年末には武道館単独公演を控え、ますます勢いに乗るパスピエ。
 ロングヒットの2ndフルアルバム「幕の内ISM」から約1年3か月振りとなる、待望の3rdフルアルバム「娑婆ラバ（しゃばらば）」リリース決定！
-配信限定シングル「贅沢ないいわけ」、3rdシングル「トキノワ」、4thシングル「裏の裏」をはじめとしたパスピエならではのキラーチェーンを満載した楽曲を収録。</div>
-                </div>
+配信限定シングル「贅沢ないいわけ」、3rdシングル「トキノワ」、4thシングル「裏の裏」をはじめとしたパスピエならではのキラーチェーンを満載した楽曲を収録。
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="background-image"></div>
+      <div class="left-content"  ng-include="'include/news.html'"></div>
     </div>
-    <div ng-include="'include/footer.html'"></div>
+  </div>
+  <div ng-include="'include/footer.html'"></div>
+  <div class="background-image" />
 </body>
