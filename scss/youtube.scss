@@ -138,7 +138,6 @@ input[name=youtube-modal-radio] {
     top: 0;
     vertical-align: top;
     width: 33%;
-    margin-left: 10px;
     @include smartphone {
       position: inherit;
       width: 100%;
@@ -146,26 +145,27 @@ input[name=youtube-modal-radio] {
       padding-bottom: 15px;
     }
     .contact-wrapper {
+      margin-left: 10px;
       .contact-message {
         width: 100%;
         font-size: $default-font-size;
       }
-    }
-    .news-wrapper {
-      padding: 10px;
-      background-color: #fff;
-      font-size: $default-font-size;
-      @include border-radius(15px);
-      @include box-shadow(3px 3px 0px 0px rgba(0,0,0,0.1));
-      @include smartphone {
-        margin-left: 0px;
-      }
-      .news-title {
-        border-bottom: 1px solid #eeeeee;
-      }
-      .news-body {
-        display: none;
-        white-space: pre-wrap ;
+      .news-wrapper {
+        padding: 10px;
+        background-color: #fff;
+        font-size: $default-font-size;
+        @include border-radius(15px);
+        @include box-shadow(3px 3px 0px 0px rgba(0,0,0,0.1));
+        @include smartphone {
+          margin-left: 0px;
+        }
+        .news-title {
+          border-bottom: 1px solid #eeeeee;
+        }
+        .news-body {
+          display: none;
+          white-space: pre-wrap ;
+        }
       }
     }
   }
