@@ -1,3 +1,5 @@
+@import "compass/define.scss";
+
 .menu {
   display: table;
   text-align:center;
@@ -10,6 +12,7 @@
     vertical-align: middle;
     text-decoration: none;
     color: gray;
+    font-size: $default-font-size;
     img {
       height: 20px;
       margin-right: 5px;
