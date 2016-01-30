@@ -139,9 +139,12 @@ input[name=youtube-modal-radio] {
     top: 0;
     vertical-align: top;
     width: 33%;
+    margin-left: 10px;
     @include smartphone {
       position: inherit;
       width: 100%;
+      margin-left: 0px;
+      padding-bottom: 15px;
     }
     .contact-wrapper {
       .contact-message {
@@ -149,7 +152,6 @@ input[name=youtube-modal-radio] {
       }
     }
     .news-wrapper {
-      margin-left: 10px;
       padding: 10px;
       background-color: #fff;
       font-size: $default-font-size;
@@ -157,6 +159,13 @@ input[name=youtube-modal-radio] {
       @include box-shadow(3px 3px 0px 0px rgba(0,0,0,0.1));
       @include smartphone {
         margin-left: 0px;
+      }
+      .news-title {
+        border-bottom: 1px solid #eeeeee;
+      }
+      .news-body {
+        display: none;
+        white-space: pre-wrap ;
       }
     }
   }

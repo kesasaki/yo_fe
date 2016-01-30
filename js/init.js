@@ -50,3 +50,11 @@ function currentPath($location) {
   }
   return current;
 }
+
+app.controller('newsToggleController', ['$scope', function($scope) {
+  $(".news-title").on("click", function(e){
+    target=$(e.currentTarget);
+    body=target.closest('li').find('.news-body')
+    body.toggle();
+  });
+}]);
