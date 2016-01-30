@@ -2,6 +2,7 @@
 @import "compass/common.scss";
 @import "menu.scss";
 @import "youtube.scss";
+@import "music.scss";
 
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
@@ -38,12 +39,6 @@ body {
             border-radius: 5px 5px;
             -webkit-border-radius: 5px 5px;
             -moz-border-radius: 5px 5px;
-            hr {
-                border: 1px solid #eeeeee;
-            }
-            .music-info {
-                white-space: pre-wrap ;
-            }
         }
         .live-row {
             text-align: center;

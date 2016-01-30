@@ -1,0 +1,53 @@
+.musics-wrapper {
+  background-color: #fff;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.7);
+  margin-bottom: 10px;
+  @include border-radius(15px);
+  @include box-shadow(3px 3px 0px 0px rgba(0,0,0,0.1));
+  .music-image {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    @include smartphone {
+      display: none;
+    }
+    .img-responsive {
+      width: 90%;
+    }
+    @include smartphone {
+      width: 100%;
+    }
+  }
+  .music-text {
+    width: 79%;
+    display: inline-block;
+    vertical-align: top;
+    h2 {
+      margin: 5px 0px 5px 5px;
+      font-size: x-large;
+      color: lightgray;
+    }
+    hr {
+      border: 1px solid #eeeeee;
+    }
+    .img-responsive {
+      display: none;
+      @include smartphone {
+        display: block;
+        width: 50%;
+        max-width: 150px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+    .music-info {
+      white-space: pre-wrap ;
+    }
+    @include smartphone {
+      width: 100%;
+    }
+  }
+}
