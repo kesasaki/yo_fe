@@ -70,6 +70,45 @@ input[name=youtube-modal-radio] {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
+  position: relative;
+  .youtube-button-wrapper {
+    margin-bottom: 15px;
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 66%;
+    @include smartphone {
+      width: 100%;
+    }
+    display: inline-block;
+    .youtube-button {
+      display: inline-block;
+      width: 50%;
+      text-align: center;
+      position: relative;
+      img {
+        width: 95%;
+      }
+      .youtube-text {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        font-size: $default-font-size;
+        color: #fff;
+      }
+      &:after {
+        content: " ";
+        background: url(https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png) 0 0 no-repeat;
+        @include background-size(contain);
+        width: 20%;
+        height: 22%;
+        display: block;
+        position: absolute;
+        margin: auto;
+        top: 40%;
+        left: 40%;
+      }
+    }
+  }
   .right-content {
     display: inline-block;
     vertical-align: top;
@@ -81,40 +120,6 @@ input[name=youtube-modal-radio] {
       margin-right: 10px;
       @include smartphone {
         margin-right: 0px;
-      }
-      .youtube-button-wrapper {
-        margin-bottom: 15px;
-        border-collapse: separate;
-        border-spacing: 10px;
-        width: 100%;
-        .youtube-button {
-          display: inline-block;
-          width: 50%;
-          text-align: center;
-          position: relative;
-          img {
-            width: 95%;
-          }
-          .youtube-text {
-            position: absolute;
-            top: 0;
-            left: 15px;
-            font-size: $default-font-size;
-            color: #fff;
-          }
-          &:after {
-            content: " ";
-            background: url(https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png) 0 0 no-repeat;
-            @include background-size(contain);
-            width: 20%;
-            height: 22%;
-            display: block;
-            position: absolute;
-            margin: auto;
-            top: 40%;
-            left: 40%;
-          }
-        }
       }
       .sound-cloud-wrapper {
         padding: 10px;
@@ -130,10 +135,18 @@ input[name=youtube-modal-radio] {
 
   .left-content {
     display: inline-block;
+    position: absolute;
+    top: 0;
     vertical-align: top;
     width: 33%;
     @include smartphone {
+      position: inherit;
       width: 100%;
+    }
+    .contact-wrapper {
+      .contact-message {
+        font-size: $default-font-size;
+      }
     }
     .news-wrapper {
       margin-left: 10px;
