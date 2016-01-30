@@ -72,7 +72,6 @@ input[name=youtube-modal-radio] {
   padding-bottom: 20px;
   position: relative;
   .youtube-button-wrapper {
-    margin-bottom: 15px;
     border-collapse: separate;
     border-spacing: 10px;
     width: 66%;
@@ -148,6 +147,7 @@ input[name=youtube-modal-radio] {
     }
     .contact-wrapper {
       .contact-message {
+        width: 100%;
         font-size: $default-font-size;
       }
     }
