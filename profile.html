@@ -12,56 +12,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <!-- materialize CSS  -->
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+        <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-
-    <!-- bootstrap -->
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <!-- /bootstrap -->
-
-    <!-- css -->
-    <link rel ="stylesheet" href="css/style.css" type="text/css" />
-
     <script src="js/init.js"></script>
 
+    <link href="./image/favicon.ico" rel="shortcut icon">
 </head>
 <body>
+  <div class="container">
     <div ng-include="'include/header.html'"></div>
-    <div class="container">
-        <div class="main-content">
-            <div class="body">
-              <div class="body-list row">
-                <div class="col-md-3 body-list-title">経緯</div>
-                <div class="col-md-9 story-body">
+      <div class="main-content">
+        <div class="right-content" >
+          <div class="music-wrapper">
+            <div class="sound-cloud-wrapper">
 幼少期より、ピアノを筆頭にクラシックバレエ等を習いながら、音楽が好きな母の影響を多大に受けて育つ。
+<br>
+<br>
 11歳で作曲に興味を持ち、鍵盤を用いて曲を作り始め、14歳ではシンセサイザーとしてオリジナルバンドに加入。
+<br>
+<br>
 17歳には、携帯電話のシーケンサーを使った作曲スタイルへ移行し、本格的にDTMでの作曲を開始。
 自身の好きなアニメソングやゲームミュージックのコピーをしながら、独自で技術や知識を学ぶ。
-
+<br>
+<br>
 2010年、役者として所属する「劇団まいほーむ」で主題歌とBGM作成を担当。
 EDに起用された「I's」は特に人気を集め、今なお奏者やアレンジを変えながらファンに好まれる一曲となった。
+<br>
+<br>
 これをきっかけに、同時期ボーカルとして所属していたアニメソングコピーバンドがオリジナルバンド「Night Holic Rabbit*2」として活動を開始。
 自身がメインボーカル、Gtと共に作曲も担当し、ライブを精力的に行う傍ら、自主制作のCDは再販を繰り返すなど盛況を極め、他のアニメソングバンド等にもサポートボーカルとして参加。
+<br>
 2014年に行われた、アイドルマスタートリビュートバンド「320production」の出演する「アイドル大戦争」では観客動員が100名を超え超満員という世界を体験し、ボーカリスト兼作曲者として自身の音楽活動を確立させていく。
+<br>
+<br>
 同年、Night Holic Rabbit*2が解散。
+<br>
+<br>
 その後、東京で活動する劇団「虹創旅団」へのオリジナル楽曲提供を開始。
+<br>
+<br>
 数々の主題歌・挿入歌を東京へと生み出しながら、新たにオリジナル曲4ピースバンド「an(y)ear」を結成。
+<br>
+<br>
 現在、個人活動で主に劇団からの作曲依頼をこなす傍ら、an(y)earではシンセボーカル、その他サポートボーカルとしても様々なバンドで活躍している。
-                </div>
-              </div>
+
             </div>
+          </div>
         </div>
-        <div ng-include="'include/footer.html'"></div>
+        <div class="left-content"  ng-include="'include/news.html'"></div>
+      </div>
     </div>
+    <div ng-include="'include/footer.html'"></div>
+  <div class="background-image" />
 </body>
