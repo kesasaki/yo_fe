@@ -28,6 +28,7 @@
     }
     .main-text {
       padding-left: 10px;
+      white-space: pre-wrap ;
       @include smartphone {
         padding-left: 0px;
       }
