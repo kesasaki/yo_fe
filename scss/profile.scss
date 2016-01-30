@@ -23,5 +23,11 @@
       display: block;
       width: 100%;
     }
+    .main-text {
+      padding-left: 10px;
+      @include smartphone {
+        padding-left: 0px;
+      }
+    }
   }
 }
