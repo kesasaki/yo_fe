@@ -1,3 +1,6 @@
+@import "compass";
+@import "compass/common.scss";
+
 .musics-wrapper {
   background-color: #fff;
   padding: 10px;
@@ -5,25 +8,7 @@
   margin-bottom: 10px;
   @include border-radius(15px);
   @include box-shadow(3px 3px 0px 0px rgba(0,0,0,0.1));
-  .music-image {
-    width: 20%;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    @include smartphone {
-      display: none;
-    }
-    .img-responsive {
-      width: 90%;
-    }
-    @include smartphone {
-      width: 100%;
-    }
-  }
   .music-text {
-    width: 79%;
-    display: inline-block;
-    vertical-align: top;
     h2 {
       margin: 5px 0px 5px 5px;
       font-size: x-large;
@@ -32,18 +17,31 @@
     hr {
       border: 1px solid #eeeeee;
     }
-    .img-responsive {
-      display: none;
+    .music-image {
+      vertical-align: top;
+      width: 20%;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      .img-responsive {
+        width: 90%;
+      }
       @include smartphone {
-        display: block;
+        float: left;
         width: 50%;
         max-width: 150px;
-        float: left;
-        margin-right: 10px;
-        margin-bottom: 10px;
+      }
+      .img-responsive {
+        @include smartphone {
+          display: block;
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
       }
     }
     .music-info {
+      width: 79%;
+      display: inline-block;
       .music-list {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -51,6 +49,10 @@
         @include smartphone {
           padding-top: 0px;
         }
+      }
+      @include smartphone {
+        width: 100%;
+        display: block;
       }
     }
     @include smartphone {
