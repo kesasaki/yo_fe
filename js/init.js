@@ -56,5 +56,6 @@ app.controller('newsToggleController', ['$scope', function($scope) {
     target=$(e.currentTarget);
     body=target.closest('li').find('.news-body')
     body.toggle();
+    target.toggleClass("toggle");
   });
 }]);
