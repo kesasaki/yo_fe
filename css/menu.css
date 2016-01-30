@@ -1,1 +1,1 @@
-.menu{display:table;text-align:center;width:100%}.menu a{display:table-cell;width:25%;height:40px;vertical-align:middle}.menu a img{height:20px;margin-right:5px;margin-bottom:-5px}
+.menu{display:table;text-align:center;width:100%;background-color:#ffffff}.menu a{display:table-cell;width:25%;height:40px;vertical-align:middle;text-decoration:none;color:gray}.menu a img{height:20px;margin-right:5px;margin-bottom:-5px;display:none}

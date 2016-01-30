@@ -5,63 +5,8 @@
 @import "music.scss";
 @import "profile.scss";
 
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
-$main-font-color: lightgray;
-$text-font-color: gray;
-
 
 body {
-    .title {
-        color: $main-font-color;
-        font-size:200%;
-    }
-    .top-news {
-        padding: 20px;
-        margin: 10px 0;
-        border: 1px solid #eeeeee;
-        .top-news-title {
-            color: lightblue;
-            font-size: 200%;
-        }
-        .top-news-body{
-            color: $text-font-color;
-            white-space: pre-wrap ;
-        }
-    }
-    .main-content {
-        .music-row-body {
-            .music-image {
-                max-width: 200px;
-            }
-            padding: 10px;
-            margin: 10px 0;
-            border: 2px solid #eeeeee;
-            border-radius: 5px 5px;
-            -webkit-border-radius: 5px 5px;
-            -moz-border-radius: 5px 5px;
-        }
-        .live-row {
-            text-align: center;
-            .live-row-body {
-                padding: 10px;
-                margin: 10px 0;
-                border: 2px solid #eeeeee;
-                border-radius: 5px 5px;
-                -webkit-border-radius: 5px 5px;
-                -moz-border-radius: 5px 5px;
-                hr {
-                    border: 1px solid #eeeeee;
-                }
-            }
-            .live-image {
-                width: 100%;
-                border-radius: 5px 5px;
-                -webkit-border-radius: 5px 5px;
-                -moz-border-radius: 5px 5px;
-            }
-        }
-    }
     .gloNavi {
         height: 50px;
         div {

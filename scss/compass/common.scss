@@ -1,4 +1,10 @@
 @import "compass";
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$main-font-color: lightgray;
+$text-font-color: gray;
+
 @mixin pc($width: 769px) {
   @media screen and (min-width: $width) {
     @content;
@@ -11,9 +17,10 @@
 }
 
 body {
-  border: 0px;
   position: relative;
   .container {
+    border-width: 0px;
+    line-height: 1.5rem;
     overflow: hidden;
     max-width: 970px;
     margin: auto;

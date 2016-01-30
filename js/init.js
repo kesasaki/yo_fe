@@ -1,11 +1,11 @@
-(function($){
-  $(function(){
-
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+//(function($){
+//  $(function(){
+//
+//    $('.button-collapse').sideNav();
+//    $('.parallax').parallax();
+//
+//  }); // end of document ready
+//})(jQuery); // end of jQuery name space
 
 app = angular.module('yo_fe', []);
 app.controller('smallMenuController', ['$scope', function($scope) {
@@ -19,12 +19,12 @@ app.controller('smallMenuController', ['$scope', function($scope) {
   };
 }]);
 app.controller('largeCurrentController', ['$scope', '$location', function($scope, $location) {
-    m = $location.absUrl().match(/\/(index\.html|profile\.html|live\.html|music\.html|works\.html|contact\.html)$/);
+    m = $location.absUrl().match(/\/(index\.html|profile\.html|music\.html)$/);
     current = "index.html"
     if (m !== null) {
         current = m[1]
     }
-    $(".gloNavi").children("a[href='" + current + "']").find("img").css("display", "inline");
+    $(".menu").children("a[href='" + current + "']").find("img").css("display", "inline");
 }]);
 app.controller('smallCurrentController', ['$scope', '$location', function($scope, $location) {
   $scope.obj={current: currentPath($location)}
