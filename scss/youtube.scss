@@ -1,5 +1,6 @@
 @import "compass";
 @import "compass/common.scss";
+@import "compass/define.scss";
 
 input[name=youtube-modal-radio] {
   display: none;
@@ -26,6 +27,7 @@ input[name=youtube-modal-radio] {
   left: 0;
   opacity: 0.5;
   background-color: #000;
+  z-index: 99;
 }
 
 .youtube-modal {
@@ -38,6 +40,7 @@ input[name=youtube-modal-radio] {
   margin-left: -275px;
   margin-top: -150px;
   background-color: #fff;
+  z-index: 100;
   @include border-radius;
   @include smartphone {
     width: 320px;
@@ -80,16 +83,30 @@ input[name=youtube-modal-radio] {
         margin-right: 0px;
       }
       .youtube-button-wrapper {
-        display: table;
         margin-bottom: 15px;
         border-collapse: separate;
         border-spacing: 10px;
         width: 100%;
-
         .youtube-button {
-          width: 40%;
-          height: 44px;
-          background-color: #ee0000;
+          display: inline-block;
+          width: 50%;
+          text-align: center;
+          position: relative;
+          img {
+            width: 95%;
+          }
+          &:after {
+            content: " ";
+            background: url(https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png) 0 0 no-repeat;
+            @include background-size(contain);
+            width: 20%;
+            height: 22%;
+            display: block;
+            position: absolute;
+            margin: auto;
+            top: 40%;
+            left: 40%;
+          }
         }
       }
       .sound-cloud-wrapper {
@@ -97,6 +114,9 @@ input[name=youtube-modal-radio] {
         background-color: rgba(255,255,255,0.7);
         @include border-radius(15px);
         @include box-shadow(3px 3px 0px 0px rgba(0,0,0,0.1));
+        .sound-cloud-text {
+          font-size: $default-font-size;
+        }
       }
     }
   }
@@ -112,6 +132,7 @@ input[name=youtube-modal-radio] {
       margin-left: 10px;
       padding: 10px;
       background-color: #fff;
+      font-size: $default-font-size;
       @include border-radius(15px);
       @include box-shadow(3px 3px 0px 0px rgba(0,0,0,0.1));
       @include smartphone {

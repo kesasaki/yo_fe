@@ -1,5 +1,6 @@
 @import "compass";
 @import "compass/common.scss";
+@import "compass/define.scss";
 
 .musics-wrapper {
   background-color: #fff;
@@ -9,6 +10,9 @@
   @include border-radius(15px);
   @include box-shadow(3px 3px 0px 0px rgba(0,0,0,0.1));
   .music-text {
+    .music-sale-date {
+      font-size: $default-font-size;
+    }
     h2 {
       margin: 5px 0px 5px 5px;
       font-size: x-large;
@@ -42,13 +46,21 @@
     .music-info {
       width: 79%;
       display: inline-block;
+      font-size: $default-font-size;
+      .release-date {
+        font-size: $default-font-size;
+      }
       .music-list {
+        font-size: $default-font-size;
         padding-top: 10px;
         padding-bottom: 10px;
         clear: left;
         @include smartphone {
           padding-top: 0px;
         }
+      }
+      .commodity-detail {
+        font-size: $default-font-size;
       }
       @include smartphone {
         width: 100%;

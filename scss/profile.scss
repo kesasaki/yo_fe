@@ -6,6 +6,9 @@
   background-color: rgba(255,255,255,0.7);
   @include border-radius(15px);
   @include box-shadow(3px 3px 0px 0px rgba(0,0,0,0.1));
+  h2 {
+    font-size: $default-font-size;
+  }
   .profile-img {
     width: 33%;
     display: inline-block;
@@ -29,6 +32,7 @@
     .main-text {
       padding-left: 10px;
       white-space: pre-wrap ;
+      font-size: $default-font-size;
       @include smartphone {
         padding-left: 0px;
       }
