@@ -24,6 +24,7 @@ body {
     overflow: hidden;
     max-width: 970px;
     margin: auto;
+    position: relative;
     .main-image {
       background: url(../image/yo_fe_banner_full.png) 0 0 no-repeat;
       @include background-size(contain);
@@ -39,11 +40,11 @@ body {
     position: absolute;
     background: url("../image/background.png") 0 0 no-repeat;
     @include background-size(contain);
+    background-position: bottom right;
     bottom: 0;
     right: 0;
     padding-top: 58%;
-    width: 50%;
-    height: 0px;
+    width: 40%;
     z-index: -100;
   }
 }
