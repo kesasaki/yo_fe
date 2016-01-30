@@ -44,7 +44,14 @@
       }
     }
     .music-info {
-      white-space: pre-wrap ;
+      .music-list {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        clear: left;
+        @include smartphone {
+          padding-top: 0px;
+        }
+      }
     }
     @include smartphone {
       width: 100%;
