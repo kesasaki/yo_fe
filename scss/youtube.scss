@@ -95,6 +95,13 @@ input[name=youtube-modal-radio] {
           img {
             width: 95%;
           }
+          .youtube-text {
+            position: absolute;
+            top: 0;
+            left: 15px;
+            font-size: $default-font-size;
+            color: #fff;
+          }
           &:after {
             content: " ";
             background: url(https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png) 0 0 no-repeat;
