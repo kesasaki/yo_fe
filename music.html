@@ -32,27 +32,28 @@
   <div class="container">
     <div ng-include="'include/header.html'"></div>
     <div class="main-content">
-      <div class="musics-wrapper">
+      <div class="musics-wrapper" ng-controller="itunesController" data-itunes-id="918328601">
         <div class="music-text">
           <div class="music-sale-date">
             1st mini album
           </div>
           <h2>S/-ity</h2>
           <div class="music-image">
-            <img class="img-responsive" src="./image/music01.jpg" />
+            <img class="img-responsive" src="{{album.info.artworkUrl100}}" />
           </div>
           <div class="music-info">
-            <div class="release-date">2016/06 Release予定</div>
+            <div class="release-date">2016/06 Release</div>
             <div class="music-list">
-              01.I's  [視聴ボタン]<br />
-              02.Stage [視聴ボタン]<br />
-              03.p.s. [視聴ボタン]<br />
-              04.Sleep [視聴ボタン]<br />
-              05.anSwer [視聴ボタン]<br />
+              <ol>
+                <li ng-repeat="song in album.songs">
+                  <div><a href="{{song.trackViewUrl}}">{{song.trackName}}</a></div>
+                  <span class="appPreview"><audio ng-src={{trustSrc(song.previewUrl)}} controls></span>
+                </li>
+              </ol>
             </div>
             <div class="commodity-detail">
-              ¥500+税　商品コード<br />
-              [リンクボタン]
+              <div>¥{{album.info.collectionPrice}}　商品コード</div>
+              <a href="{{album.info.collectionViewUrl}}" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.png) no-repeat;width:45px;height:15px;"></a>
             </div>
             <hr/>
             ソロ活動にあたって佐間野絢香の名義でリリースされる初のミニアルバム。<br />
@@ -60,27 +61,28 @@
           </div>
         </div>
       </div>
-      <div class="musics-wrapper">
+      <div class="musics-wrapper" ng-controller="itunesController" data-itunes-id="1000135839">
         <div class="music-text">
           <div class="music-sale-date">
             1st mini album
           </div>
           <h2>S/-ity</h2>
           <div class="music-image">
-            <img class="img-responsive" src="./image/music01.jpg" />
+            <img class="img-responsive" src="{{album.info.artworkUrl100}}" />
           </div>
           <div class="music-info">
-            <div class="release-date">2016/06 Release予定</div>
+            <div class="release-date">2016/06 Release</div>
             <div class="music-list">
-              01.I's  [視聴ボタン]<br />
-              02.Stage [視聴ボタン]<br />
-              03.p.s. [視聴ボタン]<br />
-              04.Sleep [視聴ボタン]<br />
-              05.anSwer [視聴ボタン]<br />
+              <ol>
+                <li ng-repeat="song in album.songs">
+                  <div><a href="{{song.trackViewUrl}}">{{song.trackName}}</a></div>
+                  <span class="appPreview"><audio ng-src={{trustSrc(song.previewUrl)}} controls></span>
+                </li>
+              </ol>
             </div>
             <div class="commodity-detail">
-              ¥500+税　商品コード<br />
-              [リンクボタン]
+              <div>¥{{album.info.collectionPrice}}　商品コード</div>
+              <a href="{{album.info.collectionViewUrl}}" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.png) no-repeat;width:45px;height:15px;"></a>
             </div>
             <hr/>
             ソロ活動にあたって佐間野絢香の名義でリリースされる初のミニアルバム。<br />
@@ -88,27 +90,28 @@
           </div>
         </div>
       </div>
-      <div class="musics-wrapper">
+      <div class="musics-wrapper" ng-controller="itunesController" data-itunes-id="1000135839">
         <div class="music-text">
           <div class="music-sale-date">
             1st mini album
           </div>
           <h2>S/-ity</h2>
           <div class="music-image">
-            <img class="img-responsive" src="./image/music01.jpg" />
+            <img class="img-responsive" src="{{album.info.artworkUrl100}}" />
           </div>
           <div class="music-info">
-            <div class="release-date">2016/06 Release予定</div>
+            <div class="release-date">2016/06 Release</div>
             <div class="music-list">
-              01.I's  [視聴ボタン]<br />
-              02.Stage [視聴ボタン]<br />
-              03.p.s. [視聴ボタン]<br />
-              04.Sleep [視聴ボタン]<br />
-              05.anSwer [視聴ボタン]<br />
+              <ol>
+                <li ng-repeat="song in album.songs">
+                  <div><a href="{{song.trackViewUrl}}">{{song.trackName}}</a></div>
+                  <span class="appPreview"><audio ng-src={{trustSrc(song.previewUrl)}} controls></span>
+                </li>
+              </ol>
             </div>
             <div class="commodity-detail">
-              ¥500+税　商品コード<br />
-              [リンクボタン]
+              <div>¥{{album.info.collectionPrice}}　商品コード</div>
+              <a href="{{album.info.collectionViewUrl}}" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.png) no-repeat;width:45px;height:15px;"></a>
             </div>
             <hr/>
             ソロ活動にあたって佐間野絢香の名義でリリースされる初のミニアルバム。<br />
