@@ -166,19 +166,33 @@ input[name=youtube-modal-radio] {
         .news-title {
           border-bottom: 1px solid #eeeeee;
           cursor: pointer;
-          white-space: nowrap;
           overflow: hidden;
-          text-overflow: ellipsis;
-          -o-text-overflow: ellipsis;
+          .title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+          }
+          &:after {
+            content: "read more";
+            float: right;
+            color: #0000ee;
+          }
         }
         .news-title.toggle {
-          white-space: inherit;
-          text-overflow: clip;
-          -o-text-overflow: clip;
+          .title {
+            white-space: inherit;
+            text-overflow: clip;
+            -o-text-overflow: clip;
+          }
+          &:after {
+            content: "";
+          }
         }
         .news-body {
           display: none;
           white-space: pre-wrap ;
+          border-bottom: 1px solid #eeeeee;
         }
       }
     }
