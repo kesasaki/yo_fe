@@ -58,6 +58,53 @@
         @include smartphone {
           padding-top: 0px;
         }
+        .track {
+          height: 31px;
+          margin-bottom: 5px;
+          position: relative;
+          @include smartphone {
+            height: inherit;
+            margin-bottom: 0px;
+          }
+          .track-title {
+            display: inline-block;
+            width: 45%;
+            @include smartphone {
+              width: 100%;
+              display: block;
+            }
+            .track-num {
+              display: inline-block;
+              width: 20px;
+              text-align: right;
+              vertical-align: middle;
+            }
+            .track-name {
+              display: inline-block;
+              width: 90%;
+              white-space: nowrap;
+              overflow: hidden;
+              vertical-align: middle;
+              text-overflow: ellipsis;
+              -o-text-overflow: ellipsis;
+            }
+          }
+          .itunes-preview {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            @include smartphone {
+              position: inherit;
+              display: block;
+              margin-left: 0;
+            }
+            audio {
+              @include smartphone {
+                width: 100%;
+              }
+            }
+          }
+        }
       }
       .commodity-detail {
         font-size: $default-font-size;

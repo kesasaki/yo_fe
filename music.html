@@ -44,12 +44,13 @@
           <div class="music-info">
             <div class="release-date">2016/06 Release</div>
             <div class="music-list">
-              <ol>
-                <li ng-repeat="song in album.songs">
-                  <div><a href="{{song.trackViewUrl}}">{{song.trackName}}</a></div>
-                  <span class="appPreview"><audio ng-src={{trustSrc(song.previewUrl)}} controls></span>
-                </li>
-              </ol>
+              <div class="track" ng-repeat="song in album.songs">
+                <div class="track-title">
+                  <div class="track-num">{{song.trackNumber}}.</div>
+                  <div class="track-name"><a href="{{song.trackViewUrl}}">{{song.trackName}}</a></div>
+                </div>
+                <div class="itunes-preview"><audio ng-src={{trustSrc(song.previewUrl)}} controls></div>
+              </div>
             </div>
             <div class="commodity-detail">
               <div>¥{{album.info.collectionPrice}}　商品コード</div>
@@ -73,12 +74,13 @@
           <div class="music-info">
             <div class="release-date">2016/06 Release</div>
             <div class="music-list">
-              <ol>
-                <li ng-repeat="song in album.songs">
-                  <div><a href="{{song.trackViewUrl}}">{{song.trackName}}</a></div>
-                  <span class="appPreview"><audio ng-src={{trustSrc(song.previewUrl)}} controls></span>
-                </li>
-              </ol>
+              <div class="track" ng-repeat="song in album.songs">
+                <div class="track-title">
+                  <div class="track-num">{{song.trackNumber}}.</div>
+                  <div class="track-name"><a href="{{song.trackViewUrl}}">{{song.trackName}}</a></div>
+                </div>
+                <div class="itunes-preview"><audio ng-src={{trustSrc(song.previewUrl)}} controls></div>
+              </div>
             </div>
             <div class="commodity-detail">
               <div>¥{{album.info.collectionPrice}}　商品コード</div>
@@ -100,14 +102,14 @@
             <img class="img-responsive" src="{{album.info.artworkUrl100}}" />
           </div>
           <div class="music-info">
-            <div class="release-date">2016/06 Release</div>
             <div class="music-list">
-              <ol>
-                <li ng-repeat="song in album.songs">
-                  <div><a href="{{song.trackViewUrl}}">{{song.trackName}}</a></div>
-                  <span class="appPreview"><audio ng-src={{trustSrc(song.previewUrl)}} controls></span>
-                </li>
-              </ol>
+              <div class="track" ng-repeat="song in album.songs">
+                <div class="track-title">
+                  <div class="track-num">{{song.trackNumber}}.</div>
+                  <div class="track-name"><a href="{{song.trackViewUrl}}">{{song.trackName}}</a></div>
+                </div>
+                <div class="itunes-preview"><audio ng-src={{trustSrc(song.previewUrl)}} controls></div>
+              </div>
             </div>
             <div class="commodity-detail">
               <div>¥{{album.info.collectionPrice}}　商品コード</div>
